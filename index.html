@@ -20,52 +20,60 @@
         </div>
 
         <hr style="border: 1px solid black;">
-
-        <div class="container">
-            <nav aria-label="Page navigation example" class="table-responsive mb-2">
-                <ul class="pagination mb-0">
-                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                    <li class="page-item"><a class="page-link" href="#">7</a></li>
-                    <li class="page-item"><a class="page-link" href="#">8</a></li>
-                    <li class="page-item"><a class="page-link" href="#">9</a></li>
-                    <li class="page-item"><a class="page-link" href="#">10</a></li>
-                    <li class="page-item"><a class="page-link" href="#">11</a></li>
-                    <li class="page-item"><a class="page-link" href="#">12</a></li>
-                    <li class="page-item"><a class="page-link" href="#">13</a></li>
-                    <li class="page-item"><a class="page-link" href="#">14</a></li>
-                    <li class="page-item"><a class="page-link" href="#">15</a></li>
-                    <li class="page-item"><a class="page-link" href="#">16</a></li>
-                    <li class="page-item"><a class="page-link" href="#">17</a></li>
-                    <li class="page-item"><a class="page-link" href="#">18</a></li>
-                    <li class="page-item"><a class="page-link" href="#">19</a></li>
-                    <li class="page-item"><a class="page-link" href="#">20</a></li>
-                    <li class="page-item"><a class="page-link" href="#">21</a></li>
-                    <li class="page-item"><a class="page-link" href="#">22</a></li>
-                    <li class="page-item"><a class="page-link" href="#">23</a></li>
-                    <li class="page-item"><a class="page-link" href="#">24</a></li>
-                    <li class="page-item"><a class="page-link" href="#">25</a></li>
-                    <li class="page-item"><a class="page-link" href="#">26</a></li>
-                    <li class="page-item"><a class="page-link" href="#">27</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-            </nav>
+        <div class="row my-2">
+            <p class="col d-flex align-items-center justify-content-center">Paginas: <select class="ml-2" id="paginador"
+                    style="width: 10vw;"></select>
+            </p>
         </div>
 
         <hr style="border: 1px solid black;">
 
-        <div class="row">
-            <div class="col-6">
-                <div class="list-group" id="list-tab" role="tablist">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="list-group mb-2" id="list-tab" role="tablist">
+                    <!---->
+                </div>
+                <div class="card" style="max-width: 45vw; height: 120vh;">
+                    <img src="./imgs/Pokehuevo.png" style="max-width: 50%; max-height: 50%;"
+                        class="card-img my-2 mx-auto" id="imagenCarta" alt="Pokemon">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-center" id="tituloPokemon"
+                            style="font-size: 1.5rem;">
+                            Selecciona Un Pokemon
+                        </h5>
+                        <hr style="border: 1px solid black;">
+                        <div class="row col-12 d-flex align-items-center justify-content-center" id="tipoPokemon">
+                            <!---->
+                        </div>
+                        <hr style="border: 1px solid black; width: 80%;">
+                        <div class="row offset-3 col-6 d-flex align-items-center justify-content-center"
+                            id="habilidadPokemon">
+                            <!---->
+                        </div>
+
+                        <hr style="border: 1px solid black; width: 50%;">
+
+                        <div id="datosPokemon" class="row d-flex align-items-center justify-content-center"
+                            style="visibility: hidden">
+                            <div id="pesoPokemon" class=" d-flex align-items-center justify-content-center"
+                                style="border-right: 1px solid rgb(155, 145, 145); border-bottom: 1px solid rgb(155, 145, 145); ">
+                                <!---->
+                            </div>
+                            <div id="alturaPokemon" class=" d-flex align-items-center justify-content-center"
+                                style="border-right: 1px solid rgb(155, 145, 145); border-bottom: 1px solid rgb(155, 145, 145);  margin-left: 2vw;">
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="card-footer row m-0 d-flex align-items-center justify-content-center">
+        <p>Hecho Por Gonzalo Gorgojo</p>
+        <img class="ml-2" src="./imgs/teclado.png" alt="">
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
