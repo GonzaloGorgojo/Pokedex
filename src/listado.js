@@ -1,7 +1,7 @@
 import * as Pokemones from './recursos.js';
 import { $PAGINADOR } from './paginacion.js';
 
-$PAGINADOR.onclick = obtenerOffset;
+$PAGINADOR.onchange = obtenerOffset;
 
 function obtenerOffset(e) {
     const numeroOffset = e.target.value - 20;
