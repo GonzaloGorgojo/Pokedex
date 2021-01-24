@@ -19,7 +19,6 @@ function obtenerPokemon(e) {
 
 async function mostrarPokemon(URL) {
     let pokemon = await Pokemones.cargarPokemon(URL);
-    console.log(pokemon)
 
     if (pokemon.sprites.other.dream_world.front_default === null) {
         $IMAGEN_CARTA.src = pokemon.sprites.front_default
