@@ -1,5 +1,5 @@
-import * as Listado from './listado.js';
-import * as Pokemones from './recursos.js';
+import * as Listado from '../listado/listado.js';
+import * as Pokemones from '../recursos/recursos.js';
 
 const $LISTADO = Listado.$LISTA;
 const $IMAGEN_CARTA = document.querySelector('#imagenCarta');
