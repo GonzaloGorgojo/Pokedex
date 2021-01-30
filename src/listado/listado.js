@@ -1,5 +1,5 @@
-import * as Pokemones from './recursos.js';
-import { $PAGINADOR } from './paginacion.js';
+import * as Pokemones from '../recursos/recursos.js';
+import { $PAGINADOR } from '../paginacion/paginacion.js';
 
 $PAGINADOR.onchange = obtenerOffset;
 
